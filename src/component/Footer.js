@@ -8,20 +8,15 @@ const Footer = () => {
             <div className='col col-1'>
                 <h1>Crypto<span className='primary'>Track</span></h1>
             </div>
-            <div className='col'>
-                <h5>Support</h5>
-                <span className='bar'></span>
-                    <a href='/'>Contact Us</a>
-                    <a href='/'>Chat</a>
-            </div>
+          
           
             <div className='col'>
                 <h5>Social</h5>
                 <span className='bar'></span>
-                    <a href='https://www.facebook.com/'><FaFacebook className='icons' /> </a>
-                    <a href='https://twitter.com/home'><FaTwitter className='icons' /> </a>
+                    <a href='https://www.facebook.com/profile.php?id=100003655111863t/'><FaFacebook className='icons' /> </a>
+                    <a href='https://twitter.com/DeepakS55008263'><FaTwitter className='icons' /> </a>
                     <a href='https://github.com/deepak15011998'><FaGithub className='icons' /> </a>
-                    <a href='https://www.linkedin.com/feed/'><FaLinkedinIn className='icons' /> </a>
+                    <a href='https://www.linkedin.com/in/deepak-singh-7a8628190/'><FaLinkedinIn className='icons' /> </a>
                 
             </div>
         </div>
