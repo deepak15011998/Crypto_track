@@ -15,12 +15,6 @@ const Navbar = () => {
             <li>
                 <a href='./show'>Featured</a>
             </li>
-            {/* <li>
-                <a href='/'>Earn</a>
-            </li> */}
-            <li>
-                <a href='#'>Contact</a>
-            </li>
         </ul>
         {/* <div className='btn-group'>
             <button className='btn'>Connect wallet</button>
