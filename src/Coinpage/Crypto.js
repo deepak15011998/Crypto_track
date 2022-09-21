@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect,lazy,Suspense } from 'react'
 import axios from 'axios'
 import { Routes, Route } from 'react-router-dom'
-import Coins from './components/Coins'
-import Coin from './routes/Coin'
+// import Coins from './components/Coins'
+// import Coin from './routes/Coin'
 import Navbar from './components/Navbar'
-
+const Coin = lazy(() => import('./routes/Coin'));
+const Coins = lazy(() => import('./components/Coins'));
 
 function App() {
 
@@ -24,13 +25,14 @@ function App() {
   return (
     <>
       <Navbar />
+      <Suspense fallback={<div>Loading.....</div>}>
       <Routes>
         <Route path='/' element={<Coins coins={coins} />} />
         <Route path='/coin' element={<Coin />}>
           <Route path=':coinId' element={<Coin />} />
         </Route>
       </Routes>
-
+       </Suspense>
     </>
   );
 }
